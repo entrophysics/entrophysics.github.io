@@ -1,45 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carol Idelfonço – Gravitação Emergente</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f4f4f4;
-      color: #333;
-      max-width: 800px;
-    }
-    img {
-      width: 150px;
-      border-radius: 100px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    h1 {
-      color: #222;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Página Pessoal</title>
+    <style>
+        /* Estilos básicos para a página ficar legível e com scroll suave */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth; /* Para rolagem suave ao clicar nos links */
+            
+            /* --- ESTILOS PARA IMAGEM DE FUNDO --- */
+            background-image: url('caminho/para/sua_imagem_de_fundo.jpg'); /* **MUDE PARA O CAMINHO DA SUA IMAGEM** */
+            background-size: cover; /* Faz a imagem cobrir toda a área */
+            background-position: center center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-attachment: fixed; /* Fixa a imagem de fundo enquanto a página rola */
+            
+            /* Para garantir que o texto seja legível sobre a imagem de fundo,
+               podemos dar um fundo semi-transparente às seções. */
+        }
+        nav {
+            background: rgba(51, 51, 51, 0.9); /* Fundo um pouco transparente para o menu */
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky; /* Menu fixo no topo ao rolar */
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+        section {
+            padding: 60px 20px; /* Mais padding para o scroll ter espaço */
+            margin: 20px auto; /* Adicionado margem para as seções flutuarem sobre o fundo */
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para as seções */
+            border-radius: 8px; /* Cantos arredondados para as seções */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar as seções */
+            border-bottom: 1px solid #eee; /* Mantido para separar visualmente, mas pode ser removido se o shadow for suficiente */
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Estilo específico para o H1 dentro da seção about para ter o negrito */
+        #about h1 {
+            font-size: 2.5em; /* Ajuste o tamanho conforme preferir */
+        }
+        #about h1 strong {
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(51, 51, 51, 0.9); /* Fundo um pouco transparente para o rodapé */
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <img src="sua_foto.jpg" alt="Foto de perfil">
-  <h1>Carol Idelfonço</h1>
-  <p>Física, educadora, pesquisadora em modelos de gravitação emergente. Interesse em cosmologia, teoria da informação e entropia no espaço-tempo.</p>
 
-  <h2>Projetos</h2>
-  <ul>
-    <li><a href="https://github.com/seuuser/gptgrade">GPTGRADE – Grupo de Pesquisa em Gravitação</a></li>
-    <li><a href="https://github.com/seuuser/gravidade-entrópica">Modelo de Gravidade Entrópica</a></li>
-  </ul>
+    <nav>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#research">research</a></li>
+        </ul>
+    </nav>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://linkedin.com/in/seuperfil">LinkedIn</a></li>
-    <li><a href="https://github.com/seuuser">GitHub</a></li>
-  </ul>
+    <section id="about">
+        <h1><strong>[Carolina]</strong> [Idelfonço]</h1>
+        
+        <p style="text-align: center; font-size: 1.2em; margin-top: -10px; margin-bottom: 40px;">Bem-vindo(a) à Minha Página Pessoal</p>
+        
+        <p>MSc student at the Laboratory of Theoretical and Computational Physics, researching emergent gravity. My academic interests include modified gravity theories, the holographic principle, and the AdS/CFT correspondence.</p>
+        <p>I hold a degree in Computational Mathematics from the State University of Campinas (Unicamp). Beyond theoretical physics, I have a strong interest in education, science communication, and the philosophy of science.</p>
+        <p>For over ten years, I have been part of GPEC (Group for Research and Science Education), a science outreach initiative where I teach the wonders of the universe to general audiences, encouraging critical thinking through experiments and sky observations.</p>
+        <p>I also curate a science fiction film club at the Museum of Image and Sound in Campinas, São Paulo, where I organize themed screenings to explore how science and technology engage with societal issues and inspire solutions. </p>
+       
+        </section>
+
+    <section id="research">
+        <h2>research</h2>
+        <p>Minha área de pesquisa principal foca em [tópico geral de pesquisa]. Meus interesses específicos incluem:</p>
+        <ul>
+            <li>**[Emergent and Modified Gravity]:** Focus on alternative gravitational models, like f(R,T) theories, with applications to cosmology and galactic dynamics.</li>
+            <li>**[Holographic Principle and Spacetime Information]:** Exploration of entropy-area relations, nonlocality, and the role of information in the emergence of gravitational phenomena.</li>
+            <li>**[AdS/CFT Correspondence]:** Interest in dualities between gravity in Anti-de Sitter space and conformal field theories, particularly in the context of entropic gravity and quantum geometry.</li>
+        </ul>
+
+       
+
+
 </body>
 </html>
